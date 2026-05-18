@@ -92,6 +92,10 @@ Crawling must follow applicable law, website terms, robots.txt, and data rights.
 python scripts/self_test.py
 ```
 
+## License
+
+MIT License. See `LICENSE`.
+
 ## Repository Layout
 
 - `SKILL.md`: Codex skill instructions
