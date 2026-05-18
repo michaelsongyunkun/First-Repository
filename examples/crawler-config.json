@@ -1,0 +1,39 @@
+{
+  "selectors": {
+    "list_item": ".product-card",
+    "title": "h2, .title",
+    "link": "a[href]",
+    "price": ".price, [itemprop=price]",
+    "summary": ".description",
+    "next_page": "a[rel=next], .pagination .next"
+  },
+  "fields": {
+    "image": {
+      "selector": "img",
+      "attr": "src",
+      "type": "url"
+    },
+    "tags": {
+      "selector": ".tag, .category",
+      "type": "list",
+      "multiple": true
+    },
+    "date": {
+      "selector": "time",
+      "attr": "datetime",
+      "type": "date"
+    }
+  },
+  "cleaning": {
+    "title": ["remove_site_suffix"],
+    "price": ["normalize_whitespace"]
+  },
+  "detail": {
+    "enabled": false,
+    "max_pages": 20,
+    "selectors": {
+      "brand": ".brand",
+      "summary": ".product-description"
+    }
+  }
+}
